@@ -1,0 +1,89 @@
+.footer {
+  height: 173px;
+  background: #ededed;
+  color: #282828;
+  display: flex;
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.footer_logo {
+  display: block;
+  width: 80px;
+  height: 114px;
+}
+.footer_nav {
+  display: flex;
+  flex-direction: column;
+}
+.footer_nav_item {
+  font-size: 14px;
+  line-height: 17px;
+  &:not(:last-child) {
+    margin-bottom: 10px;
+  }
+  &:hover {
+    color: #e59b06;
+  }
+}
+.footer_contacts_list {
+  display: flex;
+  flex-direction: column;
+}
+.contacts_list_item {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  line-height: 17px;
+  &:not(:last-child) {
+    margin-bottom: 8px;
+  }
+  &:hover {
+    color: #e59b06;
+  }
+}
+.contacts_list_item_tel1 {
+  &::before {
+    content: url(../images/svg/tel.svg);
+    margin-right: 9px;
+  }
+}
+.contacts_list_item_tel2 {
+  &::before {
+    content: url(../images/svg/flat.svg);
+    margin-right: 9px;
+  }
+}
+.contacts_list_item_mail {
+  &::before {
+    content: url(../images/svg/mail.svg);
+    margin-right: 9px;
+  }
+}
+.footer_socials {
+  display: flex;
+}
+
+.footer_socials_item {
+  &:not(:last-child) {
+    margin-right: 15px;
+  }
+}
+.footer_social-twitter {
+  svg {
+    stroke: #bc0000;
+  }
+}
+.footer_social-insta {
+  svg {
+    stroke: #e59b06;
+  }
+}
+.footer_social-facebook {
+  svg {
+    stroke: #17c1bc;
+  }
+}

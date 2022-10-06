@@ -1,0 +1,67 @@
+.form {
+  color: #fff;
+  width: 1440px;
+  height: 640px;
+  background-image: url(../images/forest.jpg);
+
+  margin-top: 150px;
+}
+.form_form {
+  display: flex;
+  flex-direction: column;
+  width: 560px;
+  height: 640px;
+  backdrop-filter: blur(10px);
+
+  padding: 132px 95px 132px 105px;
+  margin-left: auto;
+  & input {
+    font-size: 14px;
+    line-height: 17px;
+    width: 360px;
+    border: none;
+    outline: none;
+    color: white;
+    background-color: transparent;
+    border-bottom: 1px solid #ffffff;
+
+    &::placeholder {
+      color: white;
+      font-size: 12px;
+      line-height: 15px;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 45px;
+    }
+  }
+}
+.form_title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  margin-bottom: 6px;
+}
+.form_subTitle {
+  font-size: 14px;
+  line-height: 17px;
+  color: #ffc700;
+  margin-bottom: 45px;
+}
+#Email {
+  margin-bottom: 85px;
+}
+.form_btnSubmit {
+  width: 230px;
+  height: 50px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  color: white;
+  background: linear-gradient(92.71deg, #0499dd 0%, #17c1bc 100%);
+  border-radius: 60px;
+  &:hover {
+    font-size: 16px;
+    background: linear-gradient(92.71deg, #08b8b2 0%, #067bb1 100%);
+  }
+}

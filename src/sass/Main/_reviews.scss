@@ -1,0 +1,79 @@
+.reviews {
+  margin-top: 150px;
+  color: black;
+}
+
+.reviews_slaider {
+  width: 1280px;
+  //   height: 525px;
+  overflow: hidden;
+}
+.reviews_slaider_line {
+  position: relative;
+  left: 0;
+  transition: all ease 1s;
+  display: flex;
+  margin-bottom: 40px;
+}
+.line_item {
+  position: relative;
+  display: flex;
+  min-width: 740px;
+  padding: 38px 27px 38px 45px;
+  background: #ededed;
+  border-radius: 10px;
+  &::after {
+    content: url(../images/svg/marks.svg);
+    position: absolute;
+    bottom: 0;
+    right: 15px;
+    opacity: 0.6;
+    transform: rotate(16.66deg);
+  }
+  &:not(:last-child) {
+    margin-right: 20px;
+  }
+}
+.line_item_img {
+  width: 245px;
+  height: 245px;
+  border-radius: 10px;
+  margin-right: 28px;
+}
+.line_item_wrapperForText {
+}
+.line_item_title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  margin: 20px 0;
+}
+.line_item_text {
+  font-size: 14px;
+  line-height: 17px;
+  z-index: 2;
+}
+.reviews_wrapperForScrolling {
+  display: flex;
+  align-items: center;
+}
+.button_slider {
+}
+.btnScrolling_left {
+}
+.btnScrolling_right {
+}
+.scrolling_progres {
+}
+.reviews_scrolling_progres_secces {
+  position: absolute;
+  display: block;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 3px;
+  width: 258.5px;
+
+  background-color: #0499dd;
+  border-radius: 20px;
+}
