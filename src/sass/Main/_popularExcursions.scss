@@ -1,0 +1,170 @@
+.popularExcursions {
+  margin-top: 200px;
+  // padding: 0 160px;
+  color: black;
+}
+.popularExcursions_wrapperForText {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 90px;
+}
+.popularExcursions_text {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  color: #0499dd;
+}
+.popularExcursions_link {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  text-decoration-line: underline;
+  &:hover {
+    color: #ffc700;
+  }
+}
+.popularExcursions_slaider {
+  width: 1280px;
+  height: 525px;
+  overflow: hidden;
+  margin-bottom: 40px;
+}
+.popularExcursions_slaider_line {
+  position: relative;
+  left: 0;
+  transition: all ease 1s;
+  display: flex;
+}
+.popularExcursions_slaider_line_content {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  min-width: 360px;
+  height: 497px;
+
+  font-size: 12px;
+  line-height: 15px;
+  color: #fff;
+  border-radius: 10px;
+  padding: 0 16px 42px 16px;
+  &.backImage-bridge {
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.121739) 0%, #000000 100%),
+      url(../images/bridge.jpg);
+  }
+  &.backImage-horse {
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.121739) 0%, #000000 100%),
+      url(../images/horse.jpg);
+  }
+  &.backImage-waterfall {
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.121739) 0%, #000000 100%),
+      url(../images/waterfall.jpg);
+  }
+  &.backImage-monastery {
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.121739) 0%, #000000 100%),
+      url(../images/monastery.jpg);
+  }
+
+  &:not(:last-child) {
+    margin-right: 20px;
+  }
+  box-shadow: 12px 12px 20px rgba(0, 0, 0, 0.6);
+}
+.content_subTitle {
+}
+.content_title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  color: #ffc700;
+  margin-bottom: 10px;
+}
+.wrapper_for_cost {
+  display: flex;
+  align-items: center;
+
+  margin-bottom: 20px;
+}
+.cost_time {
+  &::before {
+    content: url(../images/svg/clock.svg);
+    margin-right: 5px;
+    vertical-align: middle;
+  }
+  margin-right: 13px;
+}
+.cost_money {
+  &::before {
+    content: url(../images/svg/money.svg);
+    margin-right: 5px;
+    vertical-align: middle;
+  }
+}
+.content_text {
+  margin-bottom: 20px;
+}
+.content_button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 160px;
+  height: 40px;
+  background: linear-gradient(92.71deg, #0499dd 0%, #17c1bc 100%);
+  border-radius: 40px;
+  font-weight: 700;
+
+  &:hover {
+    font-size: 14px;
+    background: linear-gradient(92.71deg, #08b8b2 0%, #067bb1 100%);
+  }
+}
+.popularExcursions_wrapperForScrolling {
+  display: flex;
+  align-items: center;
+}
+.button_slider {
+  border: none;
+  outline: none;
+  padding: 0;
+  background-color: transparent;
+  width: 24px;
+  height: 24px;
+  fill: #b9b9b9;
+}
+.btnScrolling_left {
+  margin-right: 20px;
+  transform: rotate(180deg);
+  &:hover {
+    svg {
+      fill: #0499dd;
+    }
+  }
+}
+.btnScrolling_right {
+  margin-right: 15px;
+  &:hover {
+    svg {
+      fill: #0499dd;
+    }
+  }
+}
+.scrolling_progres {
+  position: relative;
+  width: 1034px;
+  height: 2px;
+  background-color: #b9b9b9;
+  border-radius: 20px;
+}
+
+.scrolling_progres_secces {
+  position: absolute;
+  display: block;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 3px;
+  width: 344.6px;
+
+  background-color: #0499dd;
+  border-radius: 20px;
+}
