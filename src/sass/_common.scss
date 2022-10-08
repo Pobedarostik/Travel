@@ -52,7 +52,14 @@ button {
 
 .wrapper {
   margin: 0 auto;
-  width: 1440px;
+  min-width: 350px;
+  @media screen and (min-width: 468px) {
+    width: 100vw;
+  }
+
+  @media screen and (min-width: 1400px) {
+    width: 1440px;
+  }
 }
 
 .container {

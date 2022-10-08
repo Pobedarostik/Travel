@@ -69,3 +69,11 @@ Rewiews_btnLeft.addEventListener('click', () => {
   Rewiews_sliderLine.style.left = -Rewiews_offset + 'px';
   Rewiews_lineProgres.style.left = Rewiews_progres + 'px';
 });
+
+const burger = document.querySelector('.menu_burger');
+const header_nav = document.querySelector('.header_nav');
+
+burger.addEventListener('click', () => {
+  burger.classList.toggle('active');
+  header_nav.classList.toggle('active');
+});
