@@ -41,8 +41,8 @@ a {
 
 img {
   display: block;
-  width: 100%;
-  height: 100%;
+  max-width: 100%;
+  height: auto;
 }
 button {
   outline: none;
@@ -52,18 +52,29 @@ button {
 
 .wrapper {
   margin: 0 auto;
-  min-width: 350px;
-  @media screen and (min-width: 468px) {
-    width: 100vw;
-  }
+  width: 1440px;
+  // @media screen and (min-width: 468px) {
+  //   width: 100vw;
+  // }
 
-  @media screen and (min-width: 1400px) {
-    width: 1440px;
-  }
+  // @media screen and (min-width: 1400px) {
+  //   width: 1440px;
+  // }
 }
 
 .container {
-  width: 1120px;
+  width: 100%;
+  height: 100%;
   margin-left: auto;
   margin-right: auto;
+  padding: 0 24px;
+  @media screen and (min-width: 480px) {
+    padding: 0 50px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1249.98px) {
+    padding: 0 79px;
+  }
+  @media screen and (min-width: 1250px) {
+    width: 1140px;
+  }
 }

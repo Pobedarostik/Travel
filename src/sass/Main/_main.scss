@@ -2,21 +2,25 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  max-width: 100%;
+  max-width: 100vw;
   height: 789px;
-  padding: 26px 29px;
+  padding: 26px 0;
   background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
     url(../images/mainPhoto.jpg);
-
-  @media screen and (min-width: 768px) {
-    padding: 26px 79px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  // object-fit: cover;
+  & .container {
+    display: flex;
+    flex-direction: column;
   }
+  // @media screen and (min-width: 768px) {
+  //   padding: 26px 79px;
+  // }
 
-  @media screen and (min-width: 1200px) {
-    padding: 26px 129px;
-  }
-  @media screen and (min-width: 1400px) {
-    padding: 26px 160px;
+  @media screen and (min-width: 1440px) {
+    max-width: 1440px;
   }
 }
 
@@ -38,18 +42,9 @@
 }
 .header_nav {
   transition: all ease 0.3s;
-
   display: none;
   @media screen and (min-width: 768px) {
     display: flex;
-  }
-  &.active {
-    display: flex;
-    @media screen and (max-width: 550px) {
-      .header_nav_item-main {
-        display: none;
-      }
-    }
   }
 }
 .header_nav_item {
@@ -60,6 +55,15 @@
   }
   &:hover {
     color: #ffc700;
+  }
+  &.activ_link {
+    color: #ffc700;
+  }
+
+  @media screen and (max-width: 767.98px) {
+    &.header_nav_item-main {
+      display: none;
+    }
   }
 }
 
@@ -75,9 +79,10 @@
     position: absolute;
     left: 0;
     width: 100%;
-    height: 2px;
+    height: 3px;
     background-color: white;
     transition: all ease 0.5s;
+    border-radius: 20px;
   }
   &::before {
     top: 0;
@@ -91,9 +96,10 @@
     position: absolute;
     left: 0;
     width: 100%;
-    height: 2px;
+    height: 3px;
     background-color: white;
     top: 11px;
+    border-radius: 20px;
   }
 
   &.active {
@@ -109,96 +115,11 @@
       transform: scale(0);
     }
   }
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 767.98px) {
     display: block;
   }
 }
-// .mobil_menu {
-//   display: none;
-//   position: absolute;
-//   top: 0;
-//   left: 0;
-//   width: 100%;
-//   height: 100vw;
-//   background-color: rgba(0, 0, 0, 0.7);
-//   // opacity: 1;
-//   // transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-//   z-index: 99;
-//   padding: 10px 20px;
-//   &.is-open {
-//     @media screen and (max-width: 767.98px) {
-//       display: flex;
 
-//       overflow: hidden;
-//       z-index: 100;
-//     }
-//   }
-// }
-// .wrapperForMenuContent {
-//   position: relative;
-//   width: 100%;
-//   height: 80px;
-
-//   span {
-//     position: absolute;
-//     display: flex;
-//     flex-direction: column;
-//     right: 40px;
-//     top: 50%;
-//     transform: translateY(-50%);
-//     display: block;
-//     content: '';
-//     width: 20px;
-//     height: 3px;
-//     background-color: yellow;
-//     border-radius: 30px;
-
-//     &::before {
-//       position: absolute;
-//       display: flex;
-//       content: '';
-//       width: 20px;
-//       height: 3px;
-//       top: -8px;
-//       background-color: red;
-//       border-radius: 30px;
-//       transform: rotate(45deg) translateY(6px) translateX(5px);
-//     }
-//     &::after {
-//       position: absolute;
-//       display: flex;
-//       content: '';
-//       width: 20px;
-//       height: 3px;
-//       top: 8px;
-//       background-color: white;
-//       border-radius: 30px;
-//       transform: rotate(-45deg) translateY(-6px) translateX(6px);
-//     }
-//   }
-// }
-// .mobile_nav {
-//   @media screen and (max-width: 767.98px) {
-//     display: flex;
-//     flex-direction: column;
-//     justify-content: center;
-//     align-items: flex-start;
-//     width: 100%;
-//     height: 100%;
-//     background-color: blue;
-//     padding: 10px 20px;
-//   }
-// }
-// .mobile_nav_item {
-//   font-size: 14px;
-//   line-height: 17px;
-//   &:not(:last-child) {
-//     margin-bottom: 10px;
-//   }
-//   &:active {
-//     color: #ffc700;
-//   }
-// }
 // -------mainTitle-------//
 
 .wrapperFor_mainContent {
@@ -211,11 +132,28 @@
 }
 .main_title {
   position: relative;
+  max-width: 323px;
+
   font-weight: 700;
-  font-size: 72px;
-  line-height: 88px;
+  font-size: 36px;
+  line-height: 44px;
 
   margin-bottom: 65px;
+
+  @media screen and (min-width: 768px) {
+    max-width: 463px;
+
+    font-size: 48px;
+    line-height: 59px;
+  }
+  @media screen and (min-width: 1000px) {
+    max-width: 100%;
+  }
+  @media screen and (min-width: 1250px) {
+    font-size: 72px;
+    line-height: 88px;
+    max-width: 100%;
+  }
 }
 @font-face {
   font-family: 'mr_KindlyJasmineG';
@@ -232,19 +170,40 @@
   font-family: 'mr_KindlyJasmineG';
   font-style: normal;
   font-weight: 400;
-  font-size: 64px;
-  line-height: 64px;
+  font-size: 48px;
+  line-height: 48px;
 
   color: #ffc700;
 
   position: absolute;
   left: 68%;
   top: 50px;
+  @media screen and (max-width: 767.98px) {
+    top: 20px;
+  }
+
+  @media screen and (min-width: 768px) {
+    font-size: 64px;
+    line-height: 64px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 999.98px) {
+    left: 55%;
+    top: 30px;
+  }
+  @media screen and (min-width: 1000px) and (max-width: 1250px) {
+    top: 15px;
+  }
 }
 .main_title_span-PeroTravel {
   font-weight: 900;
-  font-size: 96px;
+  font-size: 72px;
   //   line-height: 117px;
+  // @media screen and (min-width: 768px) {
+  //   font-size: 9px;
+  // }
+  @media screen and (min-width: 1250px) {
+    font-size: 96px;
+  }
 }
 .main_buttom {
   display: flex;
@@ -301,13 +260,21 @@
 }
 .main_video_first {
   margin-right: 20px;
+  max-width: 295px;
   img {
     border-radius: 11px;
+  }
+  @media screen and (min-width: 1250px) {
+    max-width: 360px;
   }
 }
 .main_video_second {
   margin-right: 20px;
   img {
     border-radius: 11px;
+  }
+  max-width: 295px;
+  @media screen and (min-width: 1250px) {
+    max-width: 360px;
   }
 }
