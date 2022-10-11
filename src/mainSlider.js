@@ -70,6 +70,7 @@ Rewiews_btnLeft.addEventListener('click', () => {
   Rewiews_lineProgres.style.left = Rewiews_progres + 'px';
 });
 
+// menu Burger
 const burger = document.querySelector('.menu_burger');
 const header_nav = document.querySelector('.header_nav');
 

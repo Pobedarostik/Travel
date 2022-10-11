@@ -42,9 +42,12 @@
 }
 .header_nav {
   transition: all ease 0.3s;
-  display: none;
+  transform: scale(0);
   @media screen and (min-width: 768px) {
-    display: flex;
+    transform: scale(1);
+  }
+  &.active {
+    transform: scale(1);
   }
 }
 .header_nav_item {
