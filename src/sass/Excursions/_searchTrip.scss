@@ -1,15 +1,35 @@
 .searchTrip {
   background-color: #fbfbfb;
-  padding: 40px 0;
+  padding: 60px 24px;
+
+  @media screen and (min-width: 768px) and (max-width: 1249.98px) {
+    padding: 100px 79px;
+  }
+  @media screen and (min-width: 1250px) {
+    padding: 40px 24px;
+  }
+
   & .container {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    padding: 60px;
+    padding: 60px 15px;
     background-color: white;
     box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.05);
     border-radius: 10px;
+    margin: 0 auto;
+    @media screen and (min-width: 480px) and (max-width: 767.98px) {
+      max-width: 580px;
+      padding: 60px 25px;
+    }
+    @media screen and (min-width: 768px) and (max-width: 1249.98px) {
+      max-width: 810px;
+      padding: 60px 40px;
+    }
+    @media screen and (min-width: 1250px) {
+      padding: 60px;
+    }
   }
 }
 
@@ -34,9 +54,8 @@
 }
 .searchTrip_list_item {
   position: relative;
-  font-size: 14px;
-  line-height: 17px;
-  padding: 0 10px;
+  font-size: 9.6px;
+  line-height: 14px;
 
   cursor: pointer;
   color: #282828;
@@ -44,6 +63,7 @@
   &:not(:last-child) {
     margin-right: 10px;
   }
+
   &:hover,
   &:active {
     color: #0499dd;
@@ -62,15 +82,54 @@
     border-radius: 50px;
     z-index: 2;
   }
+
+  @media screen and (min-width: 480px) and (max-width: 767.98px) {
+    font-size: 12px;
+    line-height: 15px;
+    padding: 0;
+    &:not(:last-child) {
+      margin-right: 20px;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: 17px;
+    padding: 0 10px;
+    &:not(:last-child) {
+      margin-right: 20px;
+    }
+  }
 }
 
 .searchTrip_listInputs {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  @media screen and (max-width: 767.98px) {
+    flex-direction: column;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1249.98px) {
+    flex-wrap: wrap;
+  }
+  @media screen and (min-width: 1250px) {
+    flex-wrap: nowrap;
+  }
 }
 .searchTrip_listInputs_item {
   position: relative;
-  &:not(:last-child) {
-    margin-right: 20px;
+  @media screen and (max-width: 767.98px) {
+    margin-bottom: 20px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1249.98px) {
+    margin-bottom: 20px;
+    &:not(:nth-child(2n + 2)) {
+      margin-right: 20px;
+    }
+  }
+  @media screen and (min-width: 1250px) {
+    &:not(:last-child) {
+      margin-right: 20px;
+    }
   }
 }
 .select_location {
@@ -103,6 +162,18 @@
 
   cursor: pointer;
 }
+
+.select_date {
+  &::after {
+    position: absolute;
+    pointer-events: none;
+    content: url(../images/svg/calendar.svg);
+
+    right: 25px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
 #input-date {
   position: relative;
   border: none;
@@ -120,6 +191,18 @@
   font-weight: 600;
   font-size: 14px;
   line-height: 17px;
+}
+
+.select_quantity {
+  &::after {
+    position: absolute;
+    pointer-events: none;
+    content: url(../images/svg/quantity.svg);
+
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
 }
 #select_quantity {
   position: relative;
