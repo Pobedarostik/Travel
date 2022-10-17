@@ -52,7 +52,7 @@ button {
 
 .wrapper {
   margin: 0 auto;
-  width: 1440px;
+  // width: 1440px;
   // @media screen and (min-width: 468px) {
   //   width: 100vw;
   // }
@@ -60,6 +60,11 @@ button {
   // @media screen and (min-width: 1400px) {
   //   width: 1440px;
   // }
+  max-width: 100vw;
+  @media screen and (min-width: 1440px) {
+    max-width: 1440px;
+  }
+  overflow: hidden;
 }
 
 .container {
