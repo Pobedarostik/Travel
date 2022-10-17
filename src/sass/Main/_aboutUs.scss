@@ -6,6 +6,9 @@
   position: relative;
   background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
     url(../images/secondMainPhoto.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 
   border-radius: 0px 10px 10px 0px;
   @media screen and (min-width: 1171px) {
