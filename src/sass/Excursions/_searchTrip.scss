@@ -1,12 +1,12 @@
 .searchTrip {
   background-color: #fbfbfb;
-  padding: 60px 24px;
+  padding: 60px 24px 0 24px;
 
   @media screen and (min-width: 768px) and (max-width: 1249.98px) {
-    padding: 100px 79px;
+    padding: 100px 79px 0 79px;
   }
   @media screen and (min-width: 1250px) {
-    padding: 40px 24px;
+    padding: 40px 24px 0 24px;
   }
 
   & .container {
