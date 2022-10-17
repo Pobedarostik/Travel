@@ -80,6 +80,10 @@ button {
     padding: 0 79px;
   }
   @media screen and (min-width: 1250px) {
+    padding: 0;
     width: 1140px;
   }
+  // @media screen and (min-width: 1440px) {
+  //   width: 1440px;
+  // }
 }
