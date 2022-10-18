@@ -1,11 +1,27 @@
-.right {
+.wrapperFor_filterAndTrip {
   display: flex;
+  @media screen and (max-width: 1249.98px) {
+    flex-direction: column-reverse;
+  }
 }
 .ourTrip {
   justify-content: flex-end;
   color: #000;
-  margin-top: 40px;
-  margin-left: auto;
+  margin-top: 60px;
+  @media screen and (max-width: 767.98px) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1249.98px) {
+    max-width: 610px;
+    margin-top: 80px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  @media screen and (min-width: 1250px) {
+    margin-top: 40px;
+    margin-left: auto;
+  }
 }
 .ourTrip_title {
   font-weight: 700;
@@ -35,6 +51,15 @@
   &:not(:last-child) {
     margin-bottom: 20px;
   }
+
+  @media screen and (max-width: 767.98px) {
+    flex-direction: column;
+  }
+  @media screen and (max-width: 1249.98px) {
+    &:not(:last-child) {
+      margin-bottom: 40px;
+    }
+  }
 }
 // .ourTrip_slider_line_content {
 // }
@@ -48,6 +73,12 @@
     height: 100%;
     object-fit: cover;
     border-radius: 10px 0px 0px 10px;
+  }
+  @media screen and (max-width: 767.98px) {
+    height: 260px;
+    & img {
+      border-radius: 10px 10px 0 0;
+    }
   }
 }
 .wrapperFor_item_content {
@@ -170,5 +201,14 @@
     & svg {
       fill: #0499dd;
     }
+  }
+}
+.ourTrip_sliderProgress {
+  text-align: center;
+  font-size: 14px;
+  line-height: 17px;
+  color: #282828;
+  @media screen and (min-width: 1250px) {
+    margin-bottom: 80px;
   }
 }
