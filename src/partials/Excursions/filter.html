@@ -1,11 +1,92 @@
-<div class="container">
-  <aside style="background-color: tomato; width: 300px">
-    <h3></h3>
-    <div class="value">
-      <p>Вартість</p>
-      <input type="number" name="" id="" />
-      <input type="number" name="" id="" />
-      <input type="range" min="10" max="100" name="" id="" value="50" />
+<div class="filter">
+  <h3 class="filter_title">Фільтри</h3>
+  <div class="filter_price underLine">
+    <div class="wrapperFor_filter_text">
+      <p class="filter_subTitle">Вартість</p>
+      <span class="filter_subTitle_span"></span>
     </div>
-  </aside>
+    <div class="filter_content">
+      <div class="filter_price_iputs">
+        <input class="price_iputs-from" value="100" type="number" name="" id="price_iputs-from" />
+        <input class="price_iputs-to" value="5000" type="number" name="" id="price_iputs-to" />
+      </div>
+      <input
+        class="price_iputs-input_range"
+        type="range"
+        min="10"
+        max="100"
+        name=""
+        id="input_range"
+        value="30"
+      />
+    </div>
+  </div>
+  <div class="filter_quantity underLine">
+    <div class="wrapperFor_filter_text">
+      <p class="filter_subTitle">Кількість осіб</p>
+      <span class="filter_subTitle_span"></span>
+    </div>
+    <div class="filter_content">
+      <div class="filter_quantity_iputs">
+        <input type="button" value="1 ос." />
+        <input type="button" value="2 ос." />
+        <input type="button" value="3 ос." />
+        <input type="button" value="4 ос." />
+        <input type="button" value="5 ос." />
+        <input type="button" value="6 ос." />
+        <input type="button" value="7 ос." />
+        <input type="button" value="8 ос." />
+        <input type="button" value="9 ос." />
+        <input type="button" value="10 ос." />
+        <input type="button" value="Більше 10 ос." />
+      </div>
+    </div>
+  </div>
+  <div class="filter_location underLine">
+    <div class="wrapperFor_filter_text">
+      <p class="filter_subTitle">Місце</p>
+      <span class="filter_subTitle_span"></span>
+    </div>
+    <div class="filter_content">
+      <div class="filter_location_iputs">
+        <label for="city1">
+          <input type="radio" checked name="city1" id="" />
+          Місто 1
+        </label>
+        <label for="city2">
+          <input type="radio" checked name="city2" id="" />
+          Місто 2
+        </label>
+        <label for="city3">
+          <input type="radio" checked name="city3" id="" />
+          Місто 3
+        </label>
+        <label for="city4">
+          <input type="radio" checked name="city4" id="" />
+          Місто 4
+        </label>
+        <label for="city5">
+          <input type="radio" checked name="city5" id="" />
+          Місто 5
+        </label>
+      </div>
+    </div>
+  </div>
+  <div class="filter_duration underLine">
+    <div class="wrapperFor_filter_text">
+      <p class="filter_subTitle">Тривалість</p>
+      <span class="filter_subTitle_span"></span>
+    </div>
+  </div>
+  <div class="filter_date underLine">
+    <div class="wrapperFor_filter_text">
+      <p class="filter_subTitle">Дата</p>
+      <span class="filter_subTitle_span"></span>
+    </div>
+  </div>
+  <button class="filter_button" type="button">Показати</button>
+  <div class="wrapperFor_filter_reset">
+    <svg width="14" height="14"><use href="./images/svg/symbols.svg#reset"></use></svg>
+    <input class="filter_reset" type="reset" value="Скинути фільтри" />
+  </div>
 </div>
