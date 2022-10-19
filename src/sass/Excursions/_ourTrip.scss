@@ -100,6 +100,7 @@
   display: flex;
   align-items: flex-start;
   margin-bottom: 20px;
+  // width: 296px;
 }
 .wrapperFor_oldBillet {
   margin-right: 10px;
@@ -112,6 +113,7 @@
   font-size: 10px;
   line-height: 12px;
   color: #282828;
+  white-space: nowrap;
 }
 .wrapperFor_youngBillet {
   margin-right: 40px;
@@ -119,17 +121,22 @@
     vertical-align: text-top;
     fill: #0499dd;
   }
+  @media screen and (min-width: 768px) and (max-width: 1249.98px) {
+    margin-right: 20px;
+  }
 }
 .ourTrip_youngBillet {
   font-size: 10px;
   line-height: 12px;
   color: #282828;
+  white-space: nowrap;
 }
 .ourTrip_cost_money {
   font-weight: 700;
   font-size: 18px;
   line-height: 22px;
   color: #0499dd;
+  white-space: nowrap;
 }
 .ourTrip_cost_time {
   font-weight: 700;
@@ -140,6 +147,7 @@
     vertical-align: baseline;
     fill: #0499dd;
   }
+  white-space: nowrap;
 }
 .ourTrip_text {
   position: relative;
