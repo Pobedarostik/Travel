@@ -34,7 +34,6 @@
   align-items: center;
   justify-content: space-between;
   width: calc(100% - 470px);
-  z-index: 2;
   @media screen and (max-width: 379.98px) {
     width: 100vw;
     flex-direction: column;
@@ -106,6 +105,7 @@
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(10px);
   border-radius: 10px;
+  z-index: 2;
 }
 .price {
   font-weight: 700;
