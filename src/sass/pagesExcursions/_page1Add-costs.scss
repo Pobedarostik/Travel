@@ -1,0 +1,30 @@
+.add-costs {
+  margin: 150px 0;
+
+  .wrapperFor_prices {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .forYellowCircle {
+    margin-bottom: 40px;
+    &:not(:last-child) {
+      margin-right: 23px;
+    }
+  }
+  .wrapperFor_price {
+    padding: 0 10px;
+    box-sizing: content-box;
+  }
+  .price {
+  }
+  .text {
+  }
+}
+.add-costs_title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  color: #0499dd;
+  margin-bottom: 90px;
+}

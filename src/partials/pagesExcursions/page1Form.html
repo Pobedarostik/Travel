@@ -1,0 +1,35 @@
+<section class="section page1Form">
+  <div class="container">
+    <div class="page1Form_wrapperImg"></div>
+    <div class="wrapper_page1FormFor_Form">
+      <h3 class="page1Form_Form_title">Забронювати тур</h3>
+      <form class="page1Form_Form">
+        <label class="page1Form_label page1FormLabel_data" for="date">
+          <input name="date" type="date" value="2022-10-10" min="2022-09-01" max="2023-04-30" />
+        </label>
+        <label class="page1Form_label page1FormLabel_people" for="quantityOfPeople">
+          <input
+            class="quantityOfPeople"
+            name="quantityOfPeople"
+            type="text"
+            placeholder="Кількість дорослих"
+          />
+        </label>
+        <label class="page1Form_label page1FormLabel_people" for="quantityOfChildren">
+          <input
+            class="quantityOfChildren"
+            name="quantityOfChildren"
+            type="text"
+            placeholder="Кількість дітей"
+          />
+        </label>
+        <div class="wrapperFor_btnForm">
+          <button class="page1Form_btnSubmit" type="submit">Забронювати</button>
+          <span class="page1Header_span">
+            <svg width="20" height="20"><use href="./images/svg/symbols.svg#heart"></use></svg>
+          </span>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
