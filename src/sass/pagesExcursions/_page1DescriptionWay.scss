@@ -1,0 +1,128 @@
+.page1dDescriptionWay {
+  color: #282828;
+  margin: 150px 0;
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    @media screen and (min-width: 1250px) {
+      flex-direction: row;
+      align-items: center;
+    }
+  }
+}
+.page1dDescriptionWay_wrapperText {
+  margin-bottom: 80px;
+  // @media screen and (min-width: 768px) and (max-width: 1249.98px) {
+
+  // }
+  @media screen and (min-width: 1250px) {
+    min-width: 550px;
+    margin-right: 115px;
+  }
+}
+.page1dDescriptionWay_text_title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  color: #0499dd;
+  margin-bottom: 90px;
+}
+.page1dDescriptionWay_list {
+}
+.page1dDescriptionWay_list_item {
+  position: relative;
+  font-size: 14px;
+  line-height: 17px;
+  color: #282828;
+
+  padding-left: 30px;
+  &:not(:last-child) {
+    margin-bottom: 21px;
+  }
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    content: '';
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-right: 15px;
+    background-color: #ffc700;
+  }
+}
+.page1dDescriptionWay_list_subTitle {
+  list-style: none;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  color: #282828;
+  padding-left: 30px;
+  margin: 40px 0;
+}
+
+.page1dDescriptionWay_slider {
+  overflow: hidden;
+  width: 1706px;
+  margin-bottom: 40px;
+}
+.page1dDescriptionWay_slaider_line {
+  display: flex;
+  position: relative;
+  left: 0;
+  transition: all ease 1s;
+}
+.page1dDescriptionWay_slaider_line_content {
+  position: relative;
+  width: 413px;
+  height: 570px;
+
+  border-radius: 10px;
+  &:not(:last-child) {
+    margin-right: 18px;
+  }
+  span {
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+    color: #ffc700;
+  }
+}
+.backImg_gagra {
+  background-image: url(../images/gagra.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.backImg_collonada {
+  background-image: url(../images/collonada.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.wrapperSlider {
+  .popularExcursions_wrapperForScrolling {
+  }
+  .button_slider {
+  }
+  .btnScrolling_left {
+  }
+  .popularExcursions_btnScrolling_left {
+  }
+  .btnScrolling_right {
+  }
+  .popularExcursions_btnScrolling_right {
+  }
+  .scrolling_progres {
+    width: 410px;
+  }
+  .scrolling_progres_secces {
+    width: 25%;
+  }
+  .popularExcursions_scrolling_progres_secces {
+  }
+}
